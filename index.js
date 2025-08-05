@@ -19,7 +19,7 @@ const phases = [
 ],
 badItems: [
   "https://github.com/soraiaevelin/Jogo.Soraia-/blob/b24b15871559fab53925662086b332f917454731/apple-pixel.png?raw=true"
-]
+],
 
     fallSpeed: 5,
     dropInterval: 1500
