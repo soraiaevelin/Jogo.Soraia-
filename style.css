@@ -8,15 +8,18 @@ body {
 #game {
   width: 100vw;
   height: 100vh;
-  background: url('https://github.com/soraiaevelin/Jogo.Soraia-/blob/b24b15871559fab53925662086b332f917454731/medieval-bg.jpg?raw=true') no-repeat center center/cover;
+  /* ANTES: background: url('https://...'); */
+  /* DEPOIS: Caminho para a imagem local do fundo da fase 1 */
+  background: url('images/medieval-bg.jpg') no-repeat center center/cover;
   position: relative;
 }
 
 #player {
   width: 80px;
   height: 110px;
-  background: url('https://github.com/soraiaevelin/Jogo.Soraia-/blob/b24b15871559fab53925662086b332f917454731/character-basket.png?raw=true') no-repeat center/contain;
-
+  /* ANTES: background: url('https://...'); */
+  /* DEPOIS: Caminho para a imagem local do personagem */
+  background: url('images/character-basket.png') no-repeat center/contain;
   position: absolute;
   bottom: 20px;
   left: 50%;
@@ -24,8 +27,8 @@ body {
 }
 
 .item {
-  width: 80px;  
-  height: 80px; 
+  width: 80px;  /* antes: 40px */
+  height: 80px; /* antes: 40px */
   position: absolute;
   top: -90px;
   background-size: contain;
