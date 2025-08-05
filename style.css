@@ -24,8 +24,8 @@ body {
 }
 
 .item {
-  width: 80px;  /* antes: 40px */
-  height: 80px; /* antes: 40px */
+  width: 80px;  
+  height: 80px; 
   position: absolute;
   top: -90px;
   background-size: contain;
