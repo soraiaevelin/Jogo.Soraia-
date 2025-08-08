@@ -8,8 +8,6 @@ body {
 #game {
   width: 100vw;
   height: 100vh;
-  /* ANTES: background: url('https://...'); */
-  /* DEPOIS: Caminho para a imagem local do fundo da fase 1 */
   background: url('images/medieval-bg.jpg') no-repeat center center/cover;
   position: relative;
 }
@@ -17,8 +15,6 @@ body {
 #player {
   width: 80px;
   height: 110px;
-  /* ANTES: background: url('https://...'); */
-  /* DEPOIS: Caminho para a imagem local do personagem */
   background: url('images/character-basket.png') no-repeat center/contain;
   position: absolute;
   bottom: 20px;
@@ -27,8 +23,8 @@ body {
 }
 
 .item {
-  width: 80px;  /* antes: 40px */
-  height: 80px; /* antes: 40px */
+  width: 80px;  
+  height: 80px; 
   position: absolute;
   top: -90px;
   background-size: contain;
