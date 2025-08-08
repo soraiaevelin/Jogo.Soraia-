@@ -47,7 +47,7 @@ const phases = [
   }
 ];
 
-// === INSTRUÇÕES E MODAL ===
+
 function showInstructions() {
   const phase = phases[currentPhase];
   modal.style.display = "flex";
@@ -73,7 +73,7 @@ function showInstructions() {
   playButton.disabled = false;
 }
 
-// === INICIAR FASE APÓS PLAY OU TECLA SPACE ===
+
 function startGameCountdown() {
   let seconds = 5;
   countdown.textContent = seconds;
@@ -93,7 +93,7 @@ function startGameCountdown() {
 
 playButton.addEventListener('click', startGameCountdown);
 
-// Espaço também ativa o botão de jogar
+
 document.addEventListener('keydown', (e) => {
   keysPressed[e.key] = true;
 
@@ -106,7 +106,7 @@ document.addEventListener('keyup', (e) => {
   keysPressed[e.key] = false;
 });
 
-// === FASES E LÓGICA ===
+
 function clearGameArea() {
   document.querySelectorAll('.item').forEach(item => item.remove());
   gameIntervals.forEach(clearInterval);
@@ -189,7 +189,7 @@ function dropItem(phase) {
   }, 20);
 }
 
-// === MOVIMENTO DO JOGADOR ===
+
 function movePlayer() {
   if (keysPressed['ArrowLeft'] || keysPressed['a']) playerX -= playerSpeed;
   if (keysPressed['ArrowRight'] || keysPressed['d']) playerX += playerSpeed;
@@ -199,7 +199,7 @@ function movePlayer() {
   requestAnimationFrame(movePlayer);
 }
 
-// === INÍCIO DO JOGO ===
+
 updateHUD();
 changePhase();
 movePlayer();
